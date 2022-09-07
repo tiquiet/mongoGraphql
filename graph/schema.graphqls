@@ -1,0 +1,34 @@
+type Query {
+  getAllBooks: [Book]
+  getBook(id: ID!): Book
+}
+
+type Mutation {
+  createBook(input: NewBook!): ID!
+  updateBook(id: ID!, input: UpdateBook!): Boolean!
+  deleteBook(id: ID!): Boolean!
+}
+
+scalar Time
+
+type Book {
+  id: ID!
+  title: String!
+  description: String!
+  author: String!
+  lastUpdate: Time!
+}
+
+input NewBook {
+  title: String!
+  description: String
+  author: String!
+  lastUpdate: Time
+}
+
+input UpdateBook {
+  title: String
+  description: String
+  author: String
+  lastUpdate: Time
+}

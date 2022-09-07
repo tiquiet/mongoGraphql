@@ -1,0 +1,18 @@
+mutation {
+  updateBook(id: "63182420d2922ce0fd63c908", input: {
+    title: "test123"
+  })
+}
+
+{
+  getBook(id: "63182420d2922ce0fd63c908") {
+  id
+  title
+  author
+  description
+  lastUpdate
+}
+}
+
+2022-09-07T09:42:29.274Z
+2022-09-07T09:43:23.544Z

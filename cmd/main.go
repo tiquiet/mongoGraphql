@@ -24,7 +24,7 @@ func main() {
 	if port == "" {
 		port = defaultPort
 	}
-	Host := "localhost"
+	Host := "dataBase"
 	Port := "27017"
 	Username := ""
 	Password := ""
